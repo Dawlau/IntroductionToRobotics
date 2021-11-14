@@ -2,7 +2,11 @@
 
 Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Faculty of Mathematics and Computer Science, University of Bucharest. Each homework includes requirements, implementation details, code and image files.
 
-## Homework 1
+
+
+<details>
+
+<summary> Homework 1 </summary>
 
 ### Requirements
 
@@ -20,7 +24,11 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
 
 https://www.youtube.com/watch?v=SsmEDkxC4sU&ab_channel=AndreiBlahovici
 
-## Homework2
+</details>
+
+<details>
+
+<summary> Homework2 </summary>
 
 ### Requirements
 
@@ -47,3 +55,47 @@ https://www.youtube.com/watch?v=SsmEDkxC4sU&ab_channel=AndreiBlahovici
 ### Demo
 
 https://www.youtube.com/shorts/fuSWmsdrpt0
+
+</details>
+
+<details>
+
+<summary> Homework 3 </summary>
+
+### Requirements
+
+Should detect EMF (check body and near outlets. DO NOT INSERT INTO OUTLET). It should print the value on the 7-segment display (or light the led bar) and should make a sound based on the intensity.
+
+### Setup
+
+![alt-image](./Homework3/demo_images/lateral.jpeg)
+![alt-image](./Homework3/demo_images/up.jpeg)
+
+### Demo
+
+https://www.youtube.com/watch?v=Yhp4ss0zfhc&ab_channel=AndreiBlahovici
+
+</details>
+
+<details>
+
+<summary> Homework 4 </summary>
+
+### Requirements
+
+- First  state:   you  can  use  a  joystick  axis  to  cycle  through  the  4 digits; using the other axis does nothing.  A blinking decimal point shows the current digit position.  When pressing the button (must use interrupt for  maximum  points!),  you  lock  in  on  the  selected  digit  and  enter  the second state.
+
+- Second state: In this state, the decimal point stays always on, no longer blinking and you can no longer use the axis to cycle through the 4 digits. Instead, using the other axis, you can increment or decrement the number on the current digit.  Pressing the button again returns you to the previous state.
+
+- For bonus, save the last value in eeprom and load it when starting arduino. 	Also, keep in mind that when changing the number, you must increment it for 	each joystick movement - it should not work continuously increment if you keep 	the joystick in one position.
+
+### Setup
+
+![alt-image](./Homework4/demo_images/lateral.jpeg)
+![alt-image](./Homework4/demo_images/up.jpeg)
+
+### Demo
+
+https://www.youtube.com/watch?v=BojKTMopTfY&ab_channel=AndreiBlahovici
+
+</details>
