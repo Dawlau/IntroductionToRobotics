@@ -127,7 +127,7 @@ void writeNumber() {
 
   for (int i = 0; i < numberSize; i++) {
 
-    showDigit(displayCount - i - 1); // map index to the corresponding display
+    
 
     if (i == digitIndex) {                       // if this digit is the selected one
       writeReg(digitArray[number[i]] ^ dpState); // add the decimal point (set/unset the last bit of the number from digitArray)
@@ -135,6 +135,8 @@ void writeNumber() {
     else {
       writeReg(digitArray[number[i]]);
     }
+
+    showDigit(displayCount - i - 1); // map index to the corresponding display
 
     delay(5);
   }
